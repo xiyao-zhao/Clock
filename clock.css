@@ -1,0 +1,60 @@
+html{
+    background: url(wall_background.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+}
+
+.clock{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    margin: 50px auto;   
+    border: 30px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(0, 0, 0),
+                inset 0 0 20px rgb(215, 215, 215),
+                inset 0 0 10px rgb(0, 0, 0);
+    background:rgb(215, 215, 215, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+}
+
+.hand{
+    position: absolute;
+    height: 8px;
+    background: rgb(32, 32, 32);
+    top: 50%;
+    transform:rotate(90deg);
+    transform-origin: 85%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.2, 1.74, 0.96, 1.78);
+}
+
+.hour-hand{
+    width: 42%;
+    left: 14%;
+}
+
+.minute-hand{
+    width: 47%;
+    left: 10%;
+}
+
+.second-hand{
+    width: 55%;
+    left: 3%;
+    background: rgb(184, 28, 28);
+}
+
