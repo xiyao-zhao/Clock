@@ -1,7 +1,7 @@
 # Clock
 A live clock project built with HTML, CSS, and JavaScript.
 
-Techniques Highlight:
+Main properties & methods used in this project:
 
 CSS: transform-origin; transition-timing-function;
 
